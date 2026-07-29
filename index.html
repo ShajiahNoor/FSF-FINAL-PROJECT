@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Profile Card Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive Profile Card Generator</h1>
+
+    <div class="container">
+
+        <section class="form-section">
+
+            <form id="profileForm">
+
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" required>
+
+                <label for="role">Role / Title</label>
+                <input type="text" id="role" required>
+
+                <label for="skill">Skill Tag</label>
+                <input type="text" id="skill" required>
+
+                <button type="submit">Generate Card</button>
+
+            </form>
+
+        </section>
+
+<section id="previewSection" class="preview hidden">
+
+    <div class="profile-card" id="profileCard">
+
+        <div class="avatar">
+            👩‍💻
+        </div>
+
+        <h2 id="cardName">Your Name</h2>
+
+        <h3 id="cardRole">Web Developer</h3>
+
+        <span id="cardSkill" class="skill">#HTML</span>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <button id="downloadBtn">
+        Save / Download PDF
+    </button>
+
+</section>
