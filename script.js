@@ -36,8 +36,7 @@ form.addEventListener("submit", function(e){
 });
 
 
-downloadBtn.addEventListener("click", function(){
-
-    window.print();
+downloadBtn.addEventListener("click", () => {
+        window.print();
 
 });
